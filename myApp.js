@@ -11,6 +11,8 @@ app.get("/", function (req, res) {
     res.send(`${__dirname}/views/index.html`);
 });
 
+app.use(`${__dirname}/public`, express.static(`${__dirname}/public/style.css`));
+
 
 
 
